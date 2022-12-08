@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+</style>
+<html>
+  <head>
+    <title>Project 101</title>
+  </head>
+  <body style="direction: rtl; text-align: center;">
+    <h1>כרטיס עובד- טופס  101 </h1>
+    
+    <form action="https://formspree.io/f/moqbopby" method="POST">
+        <h3>שנת המס <input type="text" name="Year"></h3>
+      <fieldset>
+        לפי תקנות מס הכנסה ומס מעסיקים (ניכוי ממשכורת ומשכר עבודה ותשלום מס מעסיקים), התשנ"ג -1993      </fieldset>
+      <br />
+      <label style="font-weight: bold" for="Employer information">
+        א. פרטי המעביד </label
+      >
+      <table style="border:1px solid black;margin-left:auto;margin-right:auto;" id="Employer-information">
+        <thead></thead>
+        <tbody>
+          <th>שם <input type="text" name="name-employer"></th>
+          <th>כתובת <input type="text" name="adress-employer"></th>
+          <th>מס' טלפון <input type="text" name="phone-number-employer"></th>
+          <th>תיק ניכויים <input type="text" name="account-number-employer"></th>
+       
+        </tbody>
+      </table>
+      <br />
+      <label style="font-weight: bold" for="Employer information">
+        ב. פרטי העובד</label
+      >
+      <table   empty-cells: show style="border:1px solid black;margin-left:auto;margin-right:auto;" id="Employer-information">
+        <thead></thead>
+        <tbody> <tr>
+          <td>מס' זהות <input type="text" name="id-number"></td>
+          <td colspan="3">שם משפחה | שם פרטי </td>
+          <td></td>
+          <td>תאריך לידה <input type="date" name="date-of-birth"></td>
+          <td>תאריך עליה <input type="date" name="immigration-date"></td>
+        </tr>
+        <tr> <td>כתובת פרטית <input type="text" name="personal-address"></td>
+          <td><input type="text" name="surname"></td>
+          <td><input type="text" name="first-name"></td>
+          <td></td>
+          <td colspan="3">טלפון <input type="text" name="phone-number"></td>
+          <tr>
+            <td>רחוב/שכונה <input type="text" name="street/neigh."></td>
+            <td>מס' <input type="text" name="number"></td>
+            <td>עיר/ישוב <input type="text" name="city/town"></td>
+            <td>מיקוד <input type="text" name="direction"></td>
+            <td colspan="3">קידומת <input type="text" name="previous"></td>
+          </tr>
+          <td>מין זכר/נקבה <input type="radio" name="gender" value="male"> <input type="radio" name="gender" value="female"></td>
+          <td colspan="3">מצב משפחתי: רווקה/ נשוי / גרוש/ אלמן <input type="radio" name="estado"> <input type="radio" name="estado"> <input type="radio" name="estado"> <input type="radio" name="estado"></td>
+          <td>תושב ישראל כן/לא <input type="radio" name="citizen"> <input type="radio" name="citizen"></td>
+          <td colspan="2">מס ילדים שלא מלאו להם 19 שנה <input type="number" max="10">
+          
+          </select></td>
+          </table>
+          <br> <br>
+      
+                   <label style="font-weight: bold" for="table-c">ג. פרטים על ילדי שבשנת המס טרם מלאו להם 19 שנה</label>
+          <table style="border:1px solid black;margin-left:auto;margin-right:auto;" id="table-c">
+            <thead>
+              <tr>
+                <th>שם</th>
+                <th>מס זהות</th>
+                <th>תאריך לידה</th>
+                <th>__</th>
+                <th>שם</th>
+                <th>מס זהות</th>
+                <th>תאריך לידה</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><input type="text"></td><td><input type="text"></td> <td><input type="date"></td> <td></td> <td><input type="text"></td> <td><input type="text"></td> <td><input type="date"></td> 
+              </tr>
+              <tr><td><input type="text"></td><td><input type="text"></td> <td><input type="date"></td> <td></td> <td><input type="text"></td> <td><input type="text"></td> <td><input type="date"></td> 
+              </tr>
+              <tr><td><input type="text"></td><td><input type="text"></td> <td><input type="date"></td> <td></td> <td><input type="text"></td> <td><input type="text"></td> <td><input type="date"></td> 
+              </tr>
+              <tr><td><input type="text"></td><td><input type="text"></td> <td><input type="date"></td> <td></td> <td><input type="text"></td> <td><input type="text"></td> <td><input type="date"></td> 
+              </tr>
+              <tr><td><input type="text"></td><td><input type="text"></td> <td><input type="date"></td> <td></td> <td><input type="text"></td> <td><input type="text"></td> <td><input type="date"></td> 
+              </tr>
+              <tr><td><input type="text"></td><td><input type="text"></td> <td><input type="date"></td> <td></td> <td><input type="text"></td> <td><input type="text"></td> <td><input type="date"></td> 
+              </tr>
+              <tr><td><input type="text"></td><td><input type="text"></td> <td><input type="date"></td> <td></td> <td><input type="text"></td> <td><input type="text"></td> <td><input type="date"></td> 
+              </tr>
+
+           
+           
+            
+            </tbody>
+          </table>
+        
+          
+ <br><br>       
+<button>Send</button>
+    </form>
+
+  </body>
+</html>
