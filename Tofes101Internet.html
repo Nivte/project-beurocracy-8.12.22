@@ -24,7 +24,7 @@
       >
       <table style="border:1px solid black;margin-left:auto;margin-right:auto;" id="Employer-information">
         <thead></thead>
-        <tbody>
+        <tbody style="background-color: lightslategray;">
           <th>שם <input type="text" name="name-employer"></th>
           <th>כתובת <input type="text" name="adress-employer"></th>
           <th>מס' טלפון <input type="text" name="phone-number-employer"></th>
@@ -36,7 +36,7 @@
       <label style="font-weight: bold" for="Employer information">
         ב. פרטי העובד</label
       >
-      <table   empty-cells: show style="border:1px solid black;margin-left:auto;margin-right:auto;" id="Employer-information">
+      <table style="background-color: lightslategray;"  empty-cells: show style="border:1px solid black;margin-left:auto;margin-right:auto;" id="Employer-information">
         <thead></thead>
         <tbody> <tr>
           <td>מס' זהות <input type="text" name="id-number"></td>
@@ -60,7 +60,7 @@
           <td>מין זכר/נקבה <input type="radio" name="gender" value="male"> <input type="radio" name="gender" value="female"></td>
           <td colspan="3">מצב משפחתי: רווקה/ נשוי / גרוש/ אלמן <input type="radio" name="estado"> <input type="radio" name="estado"> <input type="radio" name="estado"> <input type="radio" name="estado"></td>
           <td>תושב ישראל כן/לא <input type="radio" name="citizen"> <input type="radio" name="citizen"></td>
-          <td colspan="2">מס ילדים שלא מלאו להם 19 שנה <input type="number" max="10">
+          <td colspan="2">מס ילדים שלא מלאו להם 19 שנה <input type="number"  min="0" max="10" name="minorKidsNum">
           
           </select></td>
           </table>
@@ -79,29 +79,51 @@
                 <th>תאריך לידה</th>
               </tr>
             </thead>
-            <tbody>
-              <tr><td><input type="text"></td><td><input type="text"></td> <td><input type="date"></td> <td></td> <td><input type="text"></td> <td><input type="text"></td> <td><input type="date"></td> 
+            <tbody style="background-color: lightslategray;">
+              <tr><td>1<input type="text" name="kid1Name"></td><td><input type="text" name="kid1ID"></td> <td><input type="date" name="kid1DOB"></td> <td>6</td> <td><input type="text" name="kid6Name"></td> <td><input type="text" name="kid6ID"></td> <td><input type="date" name="kid6DOB"></td> 
               </tr>
-              <tr><td><input type="text"></td><td><input type="text"></td> <td><input type="date"></td> <td></td> <td><input type="text"></td> <td><input type="text"></td> <td><input type="date"></td> 
+              <tr><td>2<input type="text" name="kid2Name"></td><td><input type="text" name="kid2ID"></td> <td><input type="date" name="kid2DOB"></td> <td>7</td> <td><input type="text" name="kid7Name"></td> <td><input type="text" name="kid7ID"></td> <td><input type="date" name="kid7DOB"></td> 
               </tr>
-              <tr><td><input type="text"></td><td><input type="text"></td> <td><input type="date"></td> <td></td> <td><input type="text"></td> <td><input type="text"></td> <td><input type="date"></td> 
+              <tr><td>3<input type="text" name="kid3Name"></td><td><input type="text" name="kid3ID"></td> <td><input type="date" name="kid3DOB"></td> <td>8</td> <td><input type="text" name="kid8Name"></td> <td><input type="text" name="kid8ID"></td> <td><input type="date" name="kid8DOB"></td> 
               </tr>
-              <tr><td><input type="text"></td><td><input type="text"></td> <td><input type="date"></td> <td></td> <td><input type="text"></td> <td><input type="text"></td> <td><input type="date"></td> 
+              <tr><td>4<input type="text" name="kid4Name"></td><td><input type="text" name="kid4ID"></td> <td><input type="date" name="kid4DOB"></td> <td>9</td> <td><input type="text" name="kid9Name"></td> <td><input type="text" name="kid9ID"></td> <td><input type="date" name="kid9DOB"></td> 
               </tr>
-              <tr><td><input type="text"></td><td><input type="text"></td> <td><input type="date"></td> <td></td> <td><input type="text"></td> <td><input type="text"></td> <td><input type="date"></td> 
+              <tr><td>5<input type="text" name="kid5Name"></td><td><input type="text" name="kid5ID"></td> <td><input type="date" name="kid5DOB"></td> <td>10</td> <td><input type="text" name="kid10Name"></td> <td><input type="text" name="kid10ID"></td> <td><input type="date" name="kid10DOB"></td> 
               </tr>
-              <tr><td><input type="text"></td><td><input type="text"></td> <td><input type="date"></td> <td></td> <td><input type="text"></td> <td><input type="text"></td> <td><input type="date"></td> 
-              </tr>
-              <tr><td><input type="text"></td><td><input type="text"></td> <td><input type="date"></td> <td></td> <td><input type="text"></td> <td><input type="text"></td> <td><input type="date"></td> 
-              </tr>
-
+              
+            
            
            
             
             </tbody>
           </table>
-        
-          
+          <br>
+          <h2>הצהרת בריאות</h2>
+          <h5>
+          סמן את השדות הנכונים לגביך: <br>
+        </h5>
+        <input type="checkbox" name="hospital"> 
+          השנה התאשפזתי בבית חולים <br>
+          </h5>
+          <input type="checkbox" name="HandInjury"> 
+           שברתי את היד <br>
+          <input type="checkbox" name="LegInjury"> 
+           שברתי את הרגל <br>
+          <input type="checkbox" name="aler-tehini"> 
+          יש לי רגישות לטחינה <br>
+          <input type="checkbox" name="aler-bamba"> 
+          יש לי רגישות לבמבה <br>
+          <input type="checkbox" name="Aler-Milk"> 
+          יש לי רגישות לחלב <br>
+          <input type="checkbox" name="profile-97"> 
+          יש לי פרופיל 97 <br>
+          <input type="checkbox" name="Blood-A"> 
+          יש לי סוג דם A+ <br>
+          <input type="checkbox" name="Blood-O"> 
+          יש לי סוג דם O <br>
+    
+        <br> <br> <br> <br> <br>
+     <input type="reset"> 
  <br><br>       
 <button>Send</button>
     </form>
